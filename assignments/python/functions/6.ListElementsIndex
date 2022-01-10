@@ -1,0 +1,25 @@
+def print_list_index(input_list: list):
+    """
+    Prints each element in the list along with its print_list_index
+    input_list: input list which we want to process
+    """
+    index = 0
+    for ele in input_list:
+        print(f"index: {index}, element: {ele}")
+        index += 1
+
+a = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i']
+print(print_list_index(a))
+
+
+/* Output:
+index: 0, element: a
+index: 1, element: b
+index: 2, element: c
+index: 3, element: d
+index: 4, element: e
+index: 5, element: f
+index: 6, element: g
+index: 7, element: h
+index: 8, element: i 
+*/
