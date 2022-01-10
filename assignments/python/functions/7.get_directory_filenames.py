@@ -12,7 +12,8 @@ def print_all_file_names(folder_name: str = None):
         folder_name = os.getcwd()
 
     for filename in glob(folder_name + '\*'):
-        print(os.path.basename(filename))
+        if os.path.isfile(filename):
+            print(os.path.basename(filename))
 
 
 print_all_file_names(r'C:\Users\abhilashs\Desktop')
